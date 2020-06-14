@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.dev.js --host 0.0.0.0 --port 3000",
+    "dev": "webpack-dev-server --config ./webpack.dev.js --host 0.0.0.0 --port 3000 --public dev.xenode.xyz",
     "build": "webpack --config ./webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^3.1.0",
+    "gl-mat4": "^1.2.0",
+    "node-sass": "^4.13.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1"
+    "react-flip-ticker": "^1.0.2",
+    "react-router-dom": "^5.0.1",
+    "simplex-noise": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",

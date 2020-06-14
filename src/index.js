@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Landing from './views/Landing/Landing.jsx'
 
+import './style.sass'
+
 ReactDOM.render(
   <Router>
     <Switch>

@@ -1,0 +1,50 @@
+@keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes fadeAndScaleIn
+    0%
+        transform: scale(0.8) translateZ(0px)
+        opacity: 0
+    100%
+        transform: scale(1) translateZ(0px)
+        opacity: 1
+
+body
+    font-family: poppins, sans-serif
+    margin: 0px
+    opacity: 0
+    animation: fadeIn 0.5s 0.5s forwards
+
+canvas
+    opacity: 0
+    animation: fadeIn 1s 0.9s forwards ease-out
+
+h1
+    font-weight: 700
+    font-style: normal
+
+#app
+    height: 100vh
+    width: 100vw
+
+.tickertext
+    padding: 0
+    margin: 0
+    font-size: 16px
+    font-weight: 300
+    color:  #333
+    cursor: pointer
+    will-change: transform, opacity
+
+.hoverFloat
+    cursor: pointer
+    &:focus
+        outline: none
+    &:hover
+        transform: translateX(3px) !important
+        color: #000
+        padding-left: 3px !important
+        margin-left: -3px !important
