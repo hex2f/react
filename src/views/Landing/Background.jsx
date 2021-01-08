@@ -29,8 +29,8 @@ export default function Background (props) {
   let gl, programInfo, shaderProgram, buffers
   
   useEffect(() => {
-    canvas.current.height = 10*(window.innerHeight/window.innerWidth)
-    canvas.current.width = 10*(window.innerWidth/window.innerHeight)
+    canvas.current.height = 8*(window.innerHeight/window.innerWidth)
+    canvas.current.width = 8*(window.innerWidth/window.innerHeight)
     gl = canvas.current.getContext('webgl')
     shaderProgram = initShaderProgram(gl, vsSource, fsSource);
     programInfo = {
@@ -48,7 +48,7 @@ export default function Background (props) {
     setInterval(_ => {
       buffers = initBuffers(gl, Date.now())
       drawScene(gl, programInfo, buffers)
-    }, 1000 / 30)
+    }, 1000 / 24)
   }, [])
 
   return (

@@ -34,7 +34,7 @@ export const button = {
     margin: 0,
     fontSize: 16,
     fontWeight: 300,
-    color: '#333',
+    color: '#000',
     cursor: 'pointer',
     willChange: 'transform, opacity',
     marginRight: 8

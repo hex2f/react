@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.dev.js --host 0.0.0.0 --port 3000 --public dev.xenode.xyz",
+    "dev": "webpack-dev-server --config ./webpack.dev.js --host 0.0.0.0 --port 3000",
     "build": "webpack --config ./webpack.dev.js"
   },
   "author": "",

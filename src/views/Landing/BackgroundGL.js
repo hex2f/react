@@ -3,7 +3,7 @@ import SimplexNoise from 'simplex-noise'
 const simplex = new SimplexNoise()
 
 function color(time, offset, speed) {
-  let brightness = 0.4
+  let brightness = 0.3
   let base = Math.abs(1/brightness-1)
   let r = simplex.noise2D(offset+1, time/1000/speed)/brightness
   let g = simplex.noise2D(offset+2, time/1000/speed)/brightness
@@ -14,6 +14,11 @@ function color(time, offset, speed) {
     Math.min((base + (g * b))/2 + 0.5, 1),
     Math.min((base + b)/2 + 0.5, 1)
     , 1.0]
+
+  // let r = Math.min(1, 0.5 + Math.pow(simplex.noise2D(offset+0, time/1000/speed) + 1.5, 2)-1)
+  // let b = Math.min(1, 0.5 + Math.pow(simplex.noise2D(offset+4, time/1000/speed) + 1.5, 2)-1)
+  // let g = //Math.min(1, 0.5 + Math.pow(simplex.noise2D(offset+2, time/1000/speed) + 1.5, 2)-1)
+  // return [r,g,b, 1.0]
 }
 
 export function initBuffers(gl, time) {
@@ -31,9 +36,9 @@ export function initBuffers(gl, time) {
 
   var colors = [
     ...color(time, 0, 25),
-    ...color(time, 0.2, 25),
-    ...color(time, 1.2, 25),
+    ...color(time, 2, 30),
     ...color(time, 1, 25),
+    ...color(time, 3, 20),
   ]
 
   const colorBuffer = gl.createBuffer()

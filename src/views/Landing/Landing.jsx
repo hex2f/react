@@ -150,18 +150,18 @@ function Content () {
           onMouseLeave={() => setDiscord(0)}
           onClick={() => {
             setDiscord(2)
-            copyTextToClipboard('meme#0001')
+            copyTextToClipboard('leah#8888')
           }}
         >
           <div style={{position: 'relative'}}>
             <span style={{...style.ticker(discord), position: 'relative'}}>discord.</span>
-            <span style={style.ticker(discord-1)}>meme#0001</span>
+            <span style={style.ticker(discord-1)}>leah#8888</span>
             <span style={style.ticker(discord-2)}>copied.</span>
           </div>
         </button>
       </div>
-      <div className={"anim3"} style={style.links}>
-        <p style={style.desc}>My name is Leah Lundqvist. I make websites, usually in React. Sometimes, when nobody else is there to hold my hand, i write servers for those sites in either Node or Python. Oh, and on rare occations i poke at apps with SwiftUI too.</p>
+      <div className={"anim3"} style={style.links}> 
+        <p style={style.desc}>Hello there! My name is Leah Lundqvist. I make websites, usually in React. Sometimes i even write servers for those sites, often in NodeJS. Oh, and on occation i poke at iOS apps with SwiftUI too.</p>
       </div>
     </div>
   )
