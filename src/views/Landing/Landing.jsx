@@ -161,7 +161,7 @@ function Content () {
         </button>
       </div>
       <div className={"anim3"} style={style.links}> 
-        <p style={style.desc}>Hello there! My name is Leah Lundqvist. I make websites, usually in React. Sometimes i even write servers for those sites, often in NodeJS. Oh, and on occation i poke at iOS apps with SwiftUI too.</p>
+        <p style={style.desc}>Hello there! My name is Leah Lundqvist. I make websites, usually in React. Sometimes I even write servers for those sites, often in NodeJS. Oh, and on occasion I poke at iOS apps with SwiftUI too.</p>
       </div>
     </div>
   )
